@@ -1,0 +1,54 @@
+/* Page background */
+body {
+    background-color: lightgrey;
+    font-family: Arial, sans-serif;
+}
+
+/* Center everything */
+h1, h2, p {
+    text-align: center;
+}
+
+/* Style the headers */
+h1 {
+    color: rgb(79, 0, 50);
+}
+
+h2 {
+    color: rgb(219, 84, 0);
+}
+
+/* Style links */
+a {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline wavy;
+}
+
+/* Style lists */
+ul {
+    text-align: left;
+    margin: 20px auto;
+    width: 50%;
+}
+
+/* Style images */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Container block */
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: solid;
+    border-color: rgb(79, 0, 50);
+}
