@@ -15,12 +15,12 @@ h1 {
 }
 
 h2 {
-    color: rgb(219, 84, 0);
+    color: (#BD4800);
 }
 
 /* Style links */
 a {
-    color: rgb(255, 0, 0);
+    color: (#6B0000);
     text-decoration: underline;
 }
 
