@@ -43,39 +43,39 @@ const galleryImage = document.getElementById("galleryImage");
 
 const images = [
     {
-        src: "web-project/images/splashdowntownart.jpg",
+        src: "../images/splashdowntownart.jpg",
         alt: "Downtown Las Cruces art mural"
     },
     {
-        src: "web-project/images/splashbuildingart.jpg",
+        src: "../images/splashbuildingart.jpg",
         alt: "Historic building artwork in Las Cruces"
     },
     {
-        src: "web-project/images/splashtheater.jpg",
+        src: "../images/splashtheater.jpg",
         alt: "Rio Grande Theatre exterior in downtown Las Cruces"
     },
     {
-        src: "web-project/images/splashdowntownstreet.jpg",
+        src: "../images/splashdowntownstreet.jpg",
         alt: "Downtown Las Cruces street view"
     },
     {
-        src: "web-project/images/splashfarmandranch.jpg",
+        src: "../images/splashfarmandranch.jpg",
         alt: "Farm and ranch landscape near Las Cruces"
     },
     {
-        src: "web-project/images/splashmountainflowers.jpg",
+        src: "../images/splashmountainflowers.jpg",
         alt: "Wildflowers in front of desert mountains"
     },
     {
-        src: "web-project/images/splashorganmountains.jpg",
+        src: "../images/splashorganmountains.jpg",
         alt: "Organ Mountains skyline at sunset"
     },
     {
-        src: "web-project/images/splashorganlandscape.jpg",
+        src: "../images/splashorganlandscape.jpg",
         alt: "Wide landscape view of the Organ Mountains"
     },
     {
-        src: "web-project/images/splashroadrunner.jpg",
+        src: "../images/splashroadrunner.jpg",
         alt: "Roadrunner bird in desert habitat"
     }
 ];
