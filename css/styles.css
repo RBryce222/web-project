@@ -8,6 +8,12 @@ body {
 h1, h2, p {
     text-align: center;
 }
+#greetingMessage {
+    text-align: center;
+}
+#username {
+    text-align: center;
+}
 
 /* Style the headers */
 h1 {
@@ -43,6 +49,11 @@ img {
   width: 50%;
 }
 
+/* Gallery fade effect */
+#galleryImage {
+    transition: opacity 0.4s ease-in-out;
+}
+
 /* Container block */
 .container {
     text-align: center;
@@ -51,4 +62,48 @@ img {
     padding: 20px;
     border: solid;
     border-color: rgb(79, 0, 50);
+}
+
+/* ============= */
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+
+/* Optimize container for smaller screens */
+    .container {
+        padding: 10px;
+        width: 95%;
+    }
+
+    /* Make images responsive */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Stack navigation links vertically */
+    a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Fix list width for mobile */
+    ul {
+        width: 90%;
+    }
+
+    /* Reduce text size for readability */
+    p {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
 }
