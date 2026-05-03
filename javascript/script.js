@@ -21,21 +21,27 @@ const facts = [
     "Clyde Tombaugh, the astronomer who discovered Pluto, was a professor at New Mexico State University (NMSU) and a resident for over 40 years.",
     "\"Las Cruces\" is Spanish for \"the crosses,\" referring to a 19th-century legend where crosses were erected to mark the graves of travelers attacked by Apache.",
     "Did you know movies and shows are regularly filmed here? From indie films to big productions, Las Cruces is becoming a quiet hotspot for the film industry, thanks to its diverse landscapes and welcoming community.",
-    "Las Cruces homes are built with stucco exteriors, tile floors, and flat roofs designed to handle the desert climate. It’s part of what gives the city its signature Southwest style."
+    "Las Cruces homes are built with stucco exteriors, tile floors, and flat roofs designed to handle the desert climate. It’s part of what gives the city its signature Southwest style.",
+    "NASA used the nearby area for landing the Space Shuttle Columbia in 1982. It is also known as the gateway to Spaceport America.",
+    "Las Cruces hosts one of the largest open-air Farmers Markets in the U.S. in its historic downtown.",
+    "Billy the Kid stood trial for murder in Las Cruces in 1880, and later, lawman Pat Garrett was killed here in a shooting.",
+    "Despite its flat appearance in town, Las Cruces sits at an elevation of nearly 4,000 feet.",
+    "In 2020, New Mexico ranked first in the nation for pecan production, with the Mesilla Valley’s massive orchards being a primary contributor.",
+    "For decades, the city was famous for the Whole Enchilada Fiesta, which once held the Guinness World Record for making the world's largest enchilada.",
+    "The city sits within the Organ Caldera; the iconic Organ Mountains to the east and the Doña Ana Mountains to the north were formed by a massive volcanic eruption approximately 32 million years ago."
 ];
 
-let lastFactIndex = -1;
+let factIndex = 0;
 
-document.getElementById("factButton").addEventListener("click", function() {
-    let randomIndex;
+document.getElementById("factButton").addEventListener("click", function () {
 
-    do {
-        randomIndex = Math.floor(Math.random() * facts.length);
-    } while (randomIndex === lastFactIndex);
+    document.getElementById("factDisplay").textContent = facts[factIndex];
 
-    lastFactIndex = randomIndex;
+    factIndex++;
 
-    document.getElementById("factDisplay").textContent = facts[randomIndex];
+    if (factIndex >= facts.length) {
+        factIndex = 0;
+    }
 });
 
 //Image gallery with next and previous button
